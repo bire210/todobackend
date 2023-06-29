@@ -41,7 +41,7 @@ password -123456
 
 ##Deploy Link
 - Netlify website link-> https://heartfelt-tapioca-b2861a.netlify.app/
-- Frontend Github Repo ->https://github.com/bire210/todoapp.git
+
 
 
 ### Environment Variables Required
