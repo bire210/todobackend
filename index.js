@@ -10,15 +10,12 @@ const app=express();
 app.use(express.json())
 const cors = require('cors');
 const todoRouter = require("./routes/todoRoute");
-
 app.use(cors());
 app.get("/",(req,res)=>{
     res.send("Home page")
 })
-
 app.use("/api/user",userRouter)
 app.use("/api/todo",todoRouter)
-
 app.use(notFound)
 app.use(errorHandler)
 app.listen(port,async()=>{

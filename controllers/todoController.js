@@ -23,6 +23,7 @@ const saveToDo =async (req, res) => {
 }
 
 const deleteToDo = async(req, res) => {
+   console.log(req.params.id)
    try {
     const deleted=await todoModel.findByIdAndDelete(req.params.id);
     res.status(200).json("Deleted ")
